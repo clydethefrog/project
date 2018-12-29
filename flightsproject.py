@@ -17,30 +17,21 @@ import pandas as pd
 
 def function():
 
-    airlines = ['Air_Canada','Delta_Air_Lines','JetBlue']
+    link = 'https://tradingeconomics.com/country-list/tourist-arrivals'
 
-    link = 'https://en.wikipedia.org/wiki/List_of_{}_destinations'.format(airlines[0])
-
-    wiki_data = pd.read_html(link)
-
-    destinations = wiki_data[1]
-
-    country = destinations[0][2:]
-    city = destinations[1][2:]
-    airport = destinations[2][2:]
+    tourism_data = pd.read_html(link)[0]
 
 
-    dictionary = dict()
-    for i,j in enumerate(list(country)):
-        temp_dict = dict()
-        relevant_city = list(city)[i]
-        relevant_airport = tuple([list(airport)[i]])
-        temp_dict[relevant_city] = relevant_airport
+    country_name = list(tourism_data['Country'])
+    last_tourism_rate = list(tourism_data['Last '])
+    previous_tourism_rate = list(tourism_data['Previous '])
 
-        if j not in dictionary.keys():
-            dictionary[j] = tuple([temp_dict])
-        else:
-            dictionary[j] += tuple([temp_dict])
-
+    dictionary = {}
+    for i,j in enumerate(country_name):
+        l_tourism_rate = tuple(['last',last_tourism_rate[i]])
+        p_tourism_rate = tuple(['previous',previous_tourism_rate[i]])
+        delta = tuple(['change',float('{:.3f}'.format((l_tourism_rate[1] - p_tourism_rate[1]) / p_tourism_rate[1]))])
+        dictionary[j] = l_tourism_rate+p_tourism_rate+delta
 
     return dictionary
+
