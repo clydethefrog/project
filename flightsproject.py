@@ -2,36 +2,42 @@
 
 
 
-#https://en.wikipedia.org/wiki/List_of_Air_Canada_destinations
+#works for any link in trading economics under 'indicators'
 
-#airlines:
-#Air_Canada
-#Delta_Airlines
-#JetBlue
-#Southwest_Airlines
-#Spirit_Airlines (not in a table)
-#WestJet
-
+#returns dictionary of dictionary
+#{'country':{'last':123, 'previous':123, 'change':0}}
 
 import pandas as pd
 
-def function():
+def function(link):
 
-    link = 'https://tradingeconomics.com/country-list/tourist-arrivals'
+    data = pd.read_html(link)[0]
 
-    tourism_data = pd.read_html(link)[0]
+    country_name = list(data['Country'])
+    last_rate = list(data['Last '])
+    previous_rate = list(data['Previous '])
 
+    dictionary = dict()
 
-    country_name = list(tourism_data['Country'])
-    last_tourism_rate = list(tourism_data['Last '])
-    previous_tourism_rate = list(tourism_data['Previous '])
-
-    dictionary = {}
     for i,j in enumerate(country_name):
-        l_tourism_rate = tuple(['last',last_tourism_rate[i]])
-        p_tourism_rate = tuple(['previous',previous_tourism_rate[i]])
-        delta = tuple(['change',float('{:.3f}'.format((l_tourism_rate[1] - p_tourism_rate[1]) / p_tourism_rate[1]))])
-        dictionary[j] = l_tourism_rate+p_tourism_rate+delta
+        temp_dict = dict()
+
+        temp_dict['last'] = last_rate[i]
+        temp_dict['previous'] = previous_rate[i]
+        temp_dict['change'] = float('{:.3f}'.format((last_rate[i] - previous_rate[i]) / previous_rate[i]))
+
+        dictionary[j] = temp_dict
 
     return dictionary
+
+
+
+#choose any link from this page >>> https://tradingeconomics.com/indicators
+# pass that link in below as a string for example:
+#link = 'https://tradingeconomics.com/country-list/tourist-arrivals'
+
+
+
+link = 'https://tradingeconomics.com/country-list/tourist-arrivals'
+function(link)
 

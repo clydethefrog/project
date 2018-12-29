@@ -25,7 +25,7 @@ class MacroDataSource:
             relevant_airport = tuple([list(airport)[i]])
             temp_dict[relevant_city] = relevant_airport
 
-            if j not in dictionary.keys():
+            if j not in dictionary:
                 dictionary[j] = tuple([temp_dict])
             else:
                 dictionary[j] += tuple([temp_dict])
