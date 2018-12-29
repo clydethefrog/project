@@ -1,3 +1,7 @@
+
+
+
+
 #https://en.wikipedia.org/wiki/List_of_Air_Canada_destinations
 
 #airlines:
@@ -11,33 +15,32 @@
 
 import pandas as pd
 
-airlines = ['Air_Canada','Delta_Air_Lines','JetBlue','Southwest_Airlines','Spirit_Airlines','WestJet']
+def function():
 
-link = 'https://en.wikipedia.org/wiki/List_of_{}_destinations'.format(airlines[0])
+    airlines = ['Air_Canada','Delta_Air_Lines','JetBlue']
 
-wiki_data = pd.read_html(link)
+    link = 'https://en.wikipedia.org/wiki/List_of_{}_destinations'.format(airlines[0])
 
-destinations = wiki_data[1]
+    wiki_data = pd.read_html(link)
 
-country = destinations[0][2:]
-city = destinations[1][2:]
-airport = destinations[2][2:]
+    destinations = wiki_data[1]
 
-
-
-
-
-dictionary = dict()
-for i,j in enumerate(list(country)):
-    temp_dict = dict()
-    relevant_city = list(city)[i]
-    relevant_airport = tuple([list(airport)[i]])
-    temp_dict[relevant_city] = relevant_airport
-
-    if j not in dictionary.keys():
-        dictionary[j] = tuple([temp_dict])
-    else:
-        dictionary[j] += tuple([temp_dict])
+    country = destinations[0][2:]
+    city = destinations[1][2:]
+    airport = destinations[2][2:]
 
 
-print(dictionary)
+    dictionary = dict()
+    for i,j in enumerate(list(country)):
+        temp_dict = dict()
+        relevant_city = list(city)[i]
+        relevant_airport = tuple([list(airport)[i]])
+        temp_dict[relevant_city] = relevant_airport
+
+        if j not in dictionary.keys():
+            dictionary[j] = tuple([temp_dict])
+        else:
+            dictionary[j] += tuple([temp_dict])
+
+
+    return dictionary
