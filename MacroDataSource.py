@@ -1,6 +1,8 @@
 
 import pandas as pd
 
+#airlines = ['Air_Canada', 'Delta_Air_Lines', 'JetBlue']
+
 
 class MacroDataSource:
 
@@ -33,9 +35,9 @@ class MacroDataSource:
 
 
 
-if __name__ == '__main__':
-    obj = MacroDataSource()
-    airlines = ['Air_Canada', 'Delta_Air_Lines', 'JetBlue']
-    airline = airlines[0]
-    obj.get_destinations_with_ticker(airline)
+#if __name__ == '__main__':
+#    obj = MacroDataSource()
+#    airlines = ['Air_Canada', 'Delta_Air_Lines', 'JetBlue']
+#    airline = airlines[0]
+#    obj.get_destinations_with_ticker(airline)
 
