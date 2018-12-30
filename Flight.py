@@ -1,14 +1,15 @@
-
 import pandas as pd
 
-#airlines = ['Air_Canada', 'Delta_Air_Lines', 'JetBlue']
+class Flight:
 
+    @staticmethod
+    def format_airline_name(name):
+        return name.replace(' ', '_')
 
-class MacroDataSource:
-
-    def get_destinations_with_ticker(self, airline):
-
-        link = 'https://en.wikipedia.org/wiki/List_of_{}_destinations'.format(airline)
+    @staticmethod
+    def destinations_for_airline(airline):
+        formatted_airline_name = Flight.format_airline_name(airline.airline)
+        link = 'https://en.wikipedia.org/wiki/List_of_{}_destinations'.format(formatted_airline_name)
 
         wiki_data = pd.read_html(link)
 
@@ -32,12 +33,8 @@ class MacroDataSource:
 
         return dictionary
 
+    @staticmethod
+    def routes(airline):
+        print("")
 
-
-
-#if __name__ == '__main__':
-#    obj = MacroDataSource()
-#    airlines = ['Air_Canada', 'Delta_Air_Lines', 'JetBlue']
-#    airline = airlines[0]
-#    obj.get_destinations_with_ticker(airline)
-
+    
