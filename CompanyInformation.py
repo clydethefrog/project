@@ -1,17 +1,12 @@
-
-
-
-
-
 import urllib.request
 import pandas
 
 class CompanyDetails:
 
-
+    # makes all letters lowercase, then makes first letter of each word uppercase then makes list using split
     def scraper(self, airline):
         name = airline.lower().title().split(' ')
-# makes all letters lowercase, then makes first letter of each word uppercase then makes list using split
+        
         symbol = '%20'
         linkTail = ''.join([j+symbol for i,j in enumerate(name)])[:-3]# air canada >>becomes>> Air%20Canada
         url = 'https://www.airfleets.net/ageflotte/' + linkTail + '.htm'
@@ -80,103 +75,6 @@ if __name__ == '__main__':
     #  united airlines, qantas, delta air lines, spirit airlines, air france,
     # american airlines, singapore airlines  etc...
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#this function will be used to associate company names with their respective ticker
-    #using a spreadsheet I downloaded which contains all of them
-
-##########################################################################################
-###################################### [in progress...] ##################################
-##########################################################################################
-##########################################################################################
-    #this DOES NOT work properly yet, need a better way cause a lot of these comapnies
-    #have similar names
-    def search_ticker(self, company_name):
-        data = pandas.read_csv('companies_tickers.csv')
-        tickers_list = list(data['Ticker'])
-        names_list = list(data['Name'])
-
-        dataset = list(zip(tickers_list, names_list))
-        dictionary = {}
-        for i,j in enumerate(dataset):
-            dictionary[j[1]] = j[0]
-
-        temp_dict = {}
-        for i in dictionary:
-            if '{}'.format(company_name) in str(i).lower():
-                temp_dict[i] = dictionary[i]
-
-        final_dict = dict()
-        possible_choices = list(temp_dict.items())
-        possible_choices.sort(key=lambda x: len(x[0]), reverse=True)
-
-        for i in possible_choices:
-            final_dict.update({i[0]: i[1]})
-
-        name = list(final_dict.keys())[-1]
-
-        return name
-
-
-
-#next: business and credit cycle stuff
-
-
-
-
-
-
-
-
-
-
-
-
-
-#http://investdb.theglobeandmail.com/invest/investSQL/gx.company_search?pi_mode=INVEST&pi_pname=&pi_call_from=&pi_comp_name=microsoft&pi_search_type=CONTAINS&pi_symbol_type=ALL&pi_exchange=All&iaction=Look+it+up%21
-
-
-
-
-
-#now that that is done, just go ahead and expand this to other airlines of interest
 
 
 
