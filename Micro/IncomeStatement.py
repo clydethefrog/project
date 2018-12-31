@@ -20,7 +20,8 @@ class IncomeStatement:
 		# returns: Data for the key or none
 	def get_data_from_income_statement(self, income_statement_parameter):
 		income_statement_data = self.income_statement_data_set # TODO- Parse to a data frame
-		company_income_statement.name
-		company_income_statement.column_keys #TODO - Use the column we know about to index the statement
+		print("analyzing data set: " + company_income_statement.name)
+		data_keys = company_income_statement.column_keys #TODO - Use the column we know about to index the statement
+
 		return None
 
