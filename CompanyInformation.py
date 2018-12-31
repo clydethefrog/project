@@ -1,17 +1,12 @@
-
-
-
-
-
 import urllib.request
 import pandas
 
 class CompanyDetails:
 
-
+    # makes all letters lowercase, then makes first letter of each word uppercase then makes list using split
     def scraper(self, airline):
         name = airline.lower().title().split(' ')
-# makes all letters lowercase, then makes first letter of each word uppercase then makes list using split
+        
         symbol = '%20'
         linkTail = ''.join([j+symbol for i,j in enumerate(name)])[:-3]# air canada >>becomes>> Air%20Canada
         url = 'https://www.airfleets.net/ageflotte/' + linkTail + '.htm'
@@ -75,95 +70,3 @@ class CompanyDetails:
         details = self.scraper(airline)
         company_details = details[9]
         return {i[0]:i[1] for i in list(zip(list(company_details[company_details.columns[0]])[:-2],                             list(company_details[company_details.columns[1]])[:-2]))}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    obj = CompanyDetails()
-
-    print(obj.search_supply_chain_proportions('qantas')) #british airways,
-    # united airlines, qantas, delta air lines, spirit airlines, air france,
-    # american airlines, singapore airlines  etc...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#http://investdb.theglobeandmail.com/invest/investSQL/gx.company_search?pi_mode=INVEST&pi_pname=&pi_call_from=&pi_comp_name=microsoft&pi_search_type=CONTAINS&pi_symbol_type=ALL&pi_exchange=All&iaction=Look+it+up%21
-
-
-
-
-
-#now that that is done, just go ahead and expand this to other airlines of interest
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
