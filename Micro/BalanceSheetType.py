@@ -1,7 +1,7 @@
 import typing
 from collections import namedtuple
 
-class IncomeStatementType(typing.NamedTuple):
+class BalanceSheetType(typing.NamedTuple):
     """
     Attributes
     ----------

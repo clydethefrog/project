@@ -1,6 +1,6 @@
 import sys
 
-sys.path.insert(0, '/Users/markmroz/Desktop/project/Micro/BalanceSheet')
+sys.path.insert(0, '/Users/markmroz/Desktop/project/Micro')
 
 from enum import Enum
 from collections import namedtuple
@@ -14,7 +14,7 @@ Income statement keys for the Airline
 AirCanada : BalanceSheetType("AC", "{'account1' => 1'}")
 """
 
-class AirlineIncomeStatement(Enum):
+class AirlineBalanceSheet(Enum):
 	
     AirCanada = BalanceSheetType("AC", "{'account1' => 1'}")
 

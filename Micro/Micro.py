@@ -8,5 +8,6 @@ class Micro:
 
 
 	def projection_step(self, airline):
-		income_statement = IncomeStatement(airline.income_statement_model, "income_statement_data_set")
+		income_statement = IncomeStatement(airline.income_statement_model, "cleaned_income_statement_data_set")
+		balance_sheet = BalanceSheet(airline.balance_sheet_model, "cleaned_balance_sheet_data")
 		return 0
