@@ -76,7 +76,9 @@ class CompanyDetails:
 if __name__ == '__main__':
     obj = CompanyDetails()
 
-    obj.search_supply_chain_proportions('air canada') #british airways, united airlines etc...
+    print(obj.search_supply_chain_proportions('air canada')) #british airways,
+    #  united airlines, qantas, delta air lines, spirit airlines, air france,
+    # american airlines, singapore airlines  etc...
 
 
 
