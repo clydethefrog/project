@@ -1,3 +1,7 @@
+import sys
+
+sys.path.insert(0, '/Users/markmroz/Desktop/project/Micro/CashFlowAnalysisUtils')
+
 """
 Class
 
@@ -28,6 +32,6 @@ class Micro:
 		balance_sheet = BalanceSheet(airline.balance_sheet_model, "cleaned_balance_sheet_data")
 
 		#TODO - change this to the actual algorithm
-		projection_step_algorithm(income_statement,balance_sheet)
+		CashFlowAnalysisUtils.projection_step_algorithm(income_statement,balance_sheet)
 
 		return 0
