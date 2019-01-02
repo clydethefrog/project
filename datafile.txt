@@ -1,0 +1,99 @@
+                                         201830/09 201830/06 201831/03  \
+Total Current Assets                          6594      6574      5978   
+Cashand Short Term Investments                4922      4670      4496   
+Cash                                             -         -         -   
+Cash& Equivalents                              852       856      1197   
+Short Term Investments                        4070      3814      3299   
+Total Receivables, Net                         960       976       891   
+Accounts Receivables- Trade, Net               960       976       891   
+Total Inventory                                226       209       192   
+Prepaid Expenses                               370       352       307   
+Other Current Assets, Total                    116       367        92   
+Total Assets                                 19777     20137     18970   
+Property/ Plant/ Equipment, Total- Net        9810      9911      9852   
+Property/ Plant/ Equipment, Total- Gross         -         -         -   
+Accumulated Depreciation, Total                  -         -         -   
+Goodwill, Net                                  311       311       311   
+Intangibles, Net                               371       350       333   
+Long Term Investments                            -         -         -   
+Note Receivable- Long Term                       -         -         -   
+Other Long Term Assets, Total                 2691      2991      2496   
+Other Assets, Total                              -         -         -   
+Total Current Liabilities                     5221      5916      5716   
+Accounts Payable                                 -         -         -   
+Payable/ Accrued                              2030      1945      2055   
+Accrued Expenses                                 -         -         -   
+Notes Payable/ Short Term Debt                   -         -         -   
+Current Port.of L T Debt/ Capital Leases       432       441       620   
+Other Currentliabilities, Total               2759      3530      3041   
+Total Liabilities                            15227     16230     15663   
+Total Long Term Debt                          6246      6567      6117   
+Long Term Debt                                6246      6567      6117   
+Capital Lease Obligations                        -         -         -   
+Total Debt                                    6678      7008      6737   
+Deferred Income Tax                            110         -         -   
+Minority Interest                                -         -         -   
+Other Liabilities, Total                      3650      3747      3830   
+Total Equity                                  4550      3907      3307   
+Redeemable Preferred Stock, Total                -         -         -   
+Preferred Stock- Non Redeemable, Net             -         -         -   
+Common Stock, Total                            803       799       801   
+Additional Paid- In Capital                     73        72        69   
+Retained Earnings( Accumulated Deficit)       3670      3038      2437   
+Treasury Stock- Common                           -         -         -   
+E S O P Debt Guarantee                           -         -         -   
+Unrealized Gain( Loss)                           -         -         -   
+Other Equity, Total                              4        -2         -   
+Total Liabilities& Shareholders' Equity      19777     20137     18970   
+Total Common Shares Outstanding             272.78    272.44    273.24   
+Total Preferred Shares Outstanding               -         -         -   
+
+                                         201731/12  
+Total Current Assets                          5397  
+Cashand Short Term Investments                3804  
+Cash                                             -  
+Cash& Equivalents                              642  
+Short Term Investments                        3162  
+Total Receivables, Net                         814  
+Accounts Receivables- Trade, Net               814  
+Total Inventory                                206  
+Prepaid Expenses                               425  
+Other Current Assets, Total                    148  
+Total Assets                                 17782  
+Property/ Plant/ Equipment, Total- Net        9252  
+Property/ Plant/ Equipment, Total- Gross         -  
+Accumulated Depreciation, Total                  -  
+Goodwill, Net                                  311  
+Intangibles, Net                               318  
+Long Term Investments                            -  
+Note Receivable- Long Term                       -  
+Other Long Term Assets, Total                 2504  
+Other Assets, Total                              -  
+Total Current Liabilities                     5101  
+Accounts Payable                                 -  
+Payable/ Accrued                              1961  
+Accrued Expenses                                 -  
+Notes Payable/ Short Term Debt                   -  
+Current Port.of L T Debt/ Capital Leases       671  
+Other Currentliabilities, Total               2469  
+Total Liabilities                            14360  
+Total Long Term Debt                          5448  
+Long Term Debt                                5448  
+Capital Lease Obligations                        -  
+Total Debt                                    6119  
+Deferred Income Tax                              -  
+Minority Interest                                -  
+Other Liabilities, Total                      3811  
+Total Equity                                  3422  
+Redeemable Preferred Stock, Total                -  
+Preferred Stock- Non Redeemable, Net             -  
+Common Stock, Total                            799  
+Additional Paid- In Capital                     69  
+Retained Earnings( Accumulated Deficit)       2554  
+Treasury Stock- Common                           -  
+E S O P Debt Guarantee                           -  
+Unrealized Gain( Loss)                           -  
+Other Equity, Total                              -  
+Total Liabilities& Shareholders' Equity      17782  
+Total Common Shares Outstanding             273.08  
+Total Preferred Shares Outstanding               -  
